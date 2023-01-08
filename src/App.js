@@ -2,6 +2,7 @@ import './App.css';
 import React, { Component } from 'react';
 import { Spin } from 'antd';
 import AppHeader from './components/AppHeader/AppHeader';
+import AppFooter from './components/AppFooter/AppFooter';
 
 class App extends Component {
 
@@ -30,6 +31,7 @@ class App extends Component {
 
           </> : <>
             <AppHeader />
+            <AppFooter />
           </>
         }
       </>

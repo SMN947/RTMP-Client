@@ -11,6 +11,7 @@ import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
 import Tooltip from '@mui/material/Tooltip';
 import appConfig from '../../appConfig';
+import Button from '@mui/material/Button';
 
 class AppHeader extends Component {
     state = {
@@ -25,20 +26,20 @@ class AppHeader extends Component {
                     <Grid container>
                         <Grid item container xs={10} sx={{ px: 2 }}>
                             <MusicVideoOutlinedIcon sx={{ mr: 2, fontSize: 40 }} />
-                            <Typography variant="h6" color="inherit" noWrap fontSize="25">
+                            <Typography variant="h6" color="inherit" noWrap sx={{ fontSize: 25 }}>
                                 {this.state.appConfig.appName}
                             </Typography>
 
                         </Grid>
 
-
-                        <Grid item xs={2} >
-                            <Tooltip title={this} className="right">
+                        <Grid item xs={2} sx={{ px: 2 }}>
+                            <Tooltip title="Perfil" className="right" sx={{ pr: 15 }}>
                                 <IconButton sx={{ p: 0 }}>
-                                    <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                                    <Avatar alt="Invitado" />
                                 </IconButton>
                             </Tooltip>
                         </Grid>
+
 
                     </Grid>
                 </Toolbar>
