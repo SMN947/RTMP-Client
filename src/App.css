@@ -1,16 +1,19 @@
-.center{
-  width: 100px;
-  height: 20px;
-  margin: auto;
-  margin-top: calc(50vh - 20px);
-  justify-content: center;
+.center {
+	width: 100px;
+	height: 20px;
+	margin: auto;
+	margin-top: calc(50vh - 20px);
+	justify-content: center;
 }
 body {
-  margin:0;
+	margin: 0;
 }
-.center2{
-  width: 70px;
-  height: 20px;
-  margin: auto;
-  justify-content: center;
+.center2 {
+	width: 70px;
+	height: 20px;
+	margin: auto;
+	justify-content: center;
+}
+.root {
+	flexgrow: 1;
 }

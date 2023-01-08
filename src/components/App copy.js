@@ -152,9 +152,6 @@ class App extends Component {
   }
 
   componentDidMount() {
-    // this.setState({
-    //   password: this.cookies.get('pass')
-    // })
     this.fetch();
   }
 
