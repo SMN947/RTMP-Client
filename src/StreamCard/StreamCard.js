@@ -17,7 +17,7 @@ class StreamCard extends Component {
         }
     }
 
-    openVideo(record) {
+    openVideo = (record) => {
         let sign = '';
         this.videoModal = Modal.info({
             icon: null,
@@ -38,7 +38,7 @@ class StreamCard extends Component {
                         </Typography>
                         <Typography variant="body2" color="text.secondary" className="code">
                             asfsd
-                            <Button onClick={this.openVideo(this.state)}>Ver Stream</Button>
+                            <Button onClick={(event) => { this.openVideo(this.state) }}>Ver Stream</Button>
                         </Typography>
                     </CardContent>
                 </Card>
